@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Ejercicio5
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Comentario\:\ Programa\ que\ pida\ primero\ nombre,\ \r\n\ \ \ \ luego\ apellido\ y\ los\ muestre\ concatenados\ en\ pantalla.\r\n
+numComments=2
