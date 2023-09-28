@@ -38,9 +38,30 @@ public class Cadenas
                 break;
                 
                 case 3:
+                    if(cadena.length()>0)
+                    {
+                        for(int i=0;i<cadena.length();i++)
+                        {
+                            char l=cadena.charAt(i);
+                            JOptionPane.showMessageDialog(null,l);
+                        }
+                    }
+                    else JOptionPane.showMessageDialog(null,"NO Hemos ingresado una Cadena");
                 break;
                 
                 case 4:
+                    if(cadena.length()>0)
+                    {
+                        String inv="";
+                        for(int i=cadena.length()-1;i>=0;i--)
+                        {
+                            char l=cadena.charAt(i);
+                            inv=inv+l;
+                            //inv+=l;
+                        }
+                        JOptionPane.showMessageDialog(null,inv);
+                    }
+                    else JOptionPane.showMessageDialog(null,"NO Hemos ingresado una Cadena");
                 break;
                 
                 case 5:
