@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=FuncionesMetodos
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ \ \ \ \ \ \ Crear\ un\ Menu\ con\ las\ siguientes\ opciones\r\n\ \ \ \ \ \ \ 1.\ Ingresar\ una\ Cadena.\r\n\ \ \ \ \ \ \ 2.\ Mostrar\ el\ primer\ caracter.\r\n\ \ \ \ \ \ \ 3.\ Mostrar\ caracter\ por\ caracter.\r\n\ \ \ \ \ \ \ 4.\ Mostrar\ la\ cadena\ invertida.\r\n\ \ \ \ \ \ \ 5.\ Salir\r\n
+comment2.params=msg
+comment2.target=void\ mensaje(java.lang.String)
+comment3.params=msg
+comment3.target=int\ pedirEntero(java.lang.String)
+numComments=4
