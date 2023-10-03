@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Peticion
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ \ \ \ \ \ \ \ Ingrese\ una\ Cadena\ y\ mostre\ cuantos\ numeros\ existen\r\n\ \ \ \ \ \ \ \ Olimpia36\ \=\ Tiene\ 2\ numeros\r\n\ \ \ \ \ \ \ \ Olimpia\ \=\ Tiene\ 0\ numeros\r\n
+numComments=2
