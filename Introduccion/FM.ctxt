@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=FM
+comment1.params=cadena
+comment1.target=int\ contarLetras(java.lang.String)
+comment2.params=cadena
+comment2.target=int\ contarNumeros(java.lang.String)
+comment3.params=cadena
+comment3.target=void\ mostrarLetraXLetra(java.lang.String)
+comment4.params=msg
+comment4.target=void\ mensaje(java.lang.String)
+comment5.params=msg
+comment5.target=int\ pedirEntero(java.lang.String)
+comment6.params=msg
+comment6.target=double\ pedirDecimal(java.lang.String)
+comment7.params=msg
+comment7.target=java.lang.String\ pedirCadena(java.lang.String)
+comment8.params=cadena
+comment8.target=java.lang.String\ invertir(java.lang.String)
+numComments=9
