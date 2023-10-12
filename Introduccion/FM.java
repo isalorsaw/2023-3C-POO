@@ -1,11 +1,34 @@
 import javax.swing.JOptionPane;
 public class FM
 {
+    //Funcion que valida y pide una posicion en una cadena
+    public static int pedirPosicion(String cadena)
+    {
+        int p=0;
+        boolean seguir=true;
+        
+        do
+        {
+            p=pedirEntero("Ingrese una Posicion Valida de "+cadena+" de 1 a "+cadena.length());
+            if(p>=1&&p<=cadena.length())seguir=false;
+            
+        }while(seguir);
+        
+        return p;
+    }
+    //Funcion que retorna la primera letra de la cadena
+    public static char primeraLetra(String cadena)
+    {
+        char le=cadena.charAt(0);
+        return le;
+        //String cadena=JOptionPane.showInputDialog("Ingrese una Cadena");
+        //return cadena.charAt(0);
+    }
     //Funcion que cuenta cuantas letras hay en una cadena
     public static int contarLetras(String cadena)
     {
         int c=0;
-        //
+        
         return c;
     }
     //Contar cuantos numeros hay en una cadena
