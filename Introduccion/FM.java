@@ -53,6 +53,38 @@ public class FM
              mensaje(l+"");
          }
     }
+    //Funcion que retorna un v o f si encuentra la letra o no
+    public static boolean buscarLetra(String palabra,char letra)
+    {
+        boolean b=false;
+        
+        for(int i=0;i<palabra.length();i++)
+        {
+            char le=palabra.charAt(i);
+            if(letra==le)b=true;
+        }
+        return b;
+    }
+    //Funcion que busque letra mayuscula o minuscula
+    public static boolean buscarLetra2(String palabra,char letra)
+    {
+        boolean b=false;
+        
+        //Convertir Palabra en Mayuscula
+        palabra=palabra.toUpperCase();
+        //Convertir la letra a buscar en Mayuscula
+        String letram=letra+"";
+        letra=letram.toUpperCase().charAt(0);
+        
+        //FM.mensaje(palabra+" "+letra);
+        
+        for(int i=0;i<palabra.length();i++)
+        {
+            char le=palabra.charAt(i);
+            if(letra==le)b=true;
+        }
+        return b;
+    }
     //Metodo que recibe una cadena y lo muestra en pantalla
     public static void mensaje(String msg)
     {
