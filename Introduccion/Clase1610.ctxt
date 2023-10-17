@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Clase1610
+comment1.params=cadena
+comment1.target=java.lang.String\ mayuscula(java.lang.String)
+comment1.text=\r\n\ \ \ \ \ \ \ Menu\r\n\ \ \ \ 1.\ Ingresar\ una\ Cadena.\r\n\ \ \ \ 2.\ Convertir\ a\ Mayuscula.\r\n\ \ \ \ 3.\ Convertir\ a\ Minusculas.\r\n\ \ \ \ 4.\ Buscar\ Letra\r\n\ \ \ \ 5.\ Si\ existe\ Letra\ enmedio.\r\n\ \ \ \ 6.\ Salir\r\n\ \ \ \ 7.\ Buscar\ Letra\ Mayuscula\ o\ Minuscula\r\n
+comment2.params=cadena
+comment2.target=java.lang.String\ minuscula(java.lang.String)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment4.params=cadena
+comment4.target=boolean\ siExisteLetraMedio(java.lang.String)
+comment5.params=cadena\ le
+comment5.target=boolean\ buscarLetra(java.lang.String,\ char)
+numComments=6

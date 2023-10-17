@@ -133,10 +133,7 @@ public class FM
     //Funcion que pide una cadena lo valida y lo retorna
     public static String pedirCadena(String msg)
     {
-        String cadena="";
-        
-        ////
-        
+        String cadena=JOptionPane.showInputDialog(msg);    
         return cadena;
     }
     //Funcion que invierta una cadena
@@ -145,5 +142,9 @@ public class FM
         String inv="";
         
         return inv;
+    }
+    public static char pedirLetra(String msg)
+    {
+        return pedirCadena(msg).charAt(0);
     }
 }
