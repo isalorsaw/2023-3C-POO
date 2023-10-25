@@ -1,8 +1,8 @@
 public class Carro
 {
     //Atributos  
-    String marca;
-    String modelo;
+    private String marca;
+    private String modelo;
     String placa;
     String color;
     
@@ -27,7 +27,25 @@ public class Carro
         this.modelo=modelo;
         this.placa=placa;
         this.color=color;
-    }    
+    }
+    //setters (metodo)
+    public void setMarca(String marca)
+    {
+        this.marca=marca;
+    }
+    public void setModelo(String modelo)
+    {
+        this.modelo=modelo;
+    }
+    //getters
+    public String getMarca()
+    {
+        return marca;
+    }
+    public String getModelo()
+    {
+        return modelo;
+    }
     //Funcion - NO SE COLOCA STATIC
     public String toString()
     {
