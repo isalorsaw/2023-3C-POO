@@ -2,4 +2,12 @@
 comment0.target=Test
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment2.params=
+comment2.target=void\ ingresarCarro()
+comment3.params=
+comment3.target=void\ imprimirCarros()
+comment4.params=
+comment4.target=void\ inicializar()
+comment5.params=
+comment5.target=void\ main1()
+numComments=6
