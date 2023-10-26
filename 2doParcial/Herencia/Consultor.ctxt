@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Consultor
+comment1.params=
+comment1.target=Consultor()
+comment2.params=nombre\ direccion\ puesto\ fnac\ fcontra\ cedula\ hora\ tarifa
+comment2.target=Consultor(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ double)
+comment3.params=
+comment3.target=double\ calculaPaga()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
