@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Trabajador
+comment1.params=nombre\ direccion\ puesto\ fnac\ fcontra\ cedula
+comment1.target=Trabajador(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=Trabajador()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4
