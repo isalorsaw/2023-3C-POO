@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Punto
+comment1.params=
+comment1.target=Punto()
+comment2.params=x\ y\ ruta
+comment2.target=Punto(int,\ int,\ java.lang.String)
+comment3.params=x\ y
+comment3.target=Punto(int,\ int)
+comment4.params=
+comment4.target=void\ mover()
+comment5.params=g
+comment5.target=void\ dibujar(java.awt.Graphics)
+numComments=6
