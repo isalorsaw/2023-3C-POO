@@ -9,7 +9,7 @@ public class Pral extends JFrame
         
         e=new Escenario();
         
-        add(e);
+        add(e);//Agregar al JFrame
         
         setSize(800,500);//Tamanio de la ventana. PX
         setLocationRelativeTo(null);//Centrar la venta en la pantalla

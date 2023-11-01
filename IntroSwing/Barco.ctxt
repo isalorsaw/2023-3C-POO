@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Barco
+comment1.params=
+comment1.target=Barco()
+comment2.params=x\ y\ ruta
+comment2.target=Barco(int,\ int,\ java.lang.String)
+comment3.params=g
+comment3.target=void\ dibujar(java.awt.Graphics)
+comment4.params=
+comment4.target=void\ mover()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6
