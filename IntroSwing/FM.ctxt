@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=FM
+comment1.params=desde\ hasta
+comment1.target=int\ generaAleatorio(int,\ int)
+numComments=2

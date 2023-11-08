@@ -24,9 +24,12 @@ public class Barco
     {
         g.drawImage(imagen,x,y,null);
     }
-    void mover()
+    void mover(char dir)
     {
-        
+        if(dir=='i')
+        {
+            x--;
+        }
     }
     public String toString()
     {
