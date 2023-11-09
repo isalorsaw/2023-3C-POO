@@ -20,6 +20,11 @@ public class Barco
         this.ima=new ImageIcon(getClass().getResource(ruta));
         this.imagen=ima.getImage();
     }
+    void cambiarImagen(String ruta)
+    {
+        this.ima=new ImageIcon(getClass().getResource(ruta));
+        this.imagen=ima.getImage();
+    }
     void dibujar(Graphics g)
     {
         g.drawImage(imagen,x,y,null);
@@ -29,6 +34,12 @@ public class Barco
         if(dir=='i')
         {
             x--;
+            cambiarImagen("imagenes/barquito_i.png");
+        }
+        else if(dir=='d')
+        {
+            x++;
+            cambiarImagen("imagenes/barquito_d.png");
         }
     }
     public String toString()

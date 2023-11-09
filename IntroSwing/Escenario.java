@@ -7,6 +7,7 @@ public class Escenario extends JPanel implements KeyListener
     //Incorporar clases
     Punto p;
     Barco b;
+    Fondo f;
     public Escenario()
     {
         //Generar un aleatorio.
@@ -17,10 +18,9 @@ public class Escenario extends JPanel implements KeyListener
         setFocusable(true);//Importante para los eventos de las teclas
         
         p=new Punto(400,250);
-        b=new Barco(xx,250,"imagenes/barquito.png");
-        setSize(800,500); 
-        
-        
+        b=new Barco(xx,430,"imagenes/barquito_d.png");
+        f=new Fondo(0,0,"imagenes/fondo2.png");
+        setSize(1000,570); 
     }
     public void keyReleased(KeyEvent e)//Suelto la tecla
     {
@@ -29,11 +29,16 @@ public class Escenario extends JPanel implements KeyListener
     public void keyPressed(KeyEvent e)//Al presionar una tecla
     {
         int codigo=e.getKeyCode();
-        //System.out.println("Hola "+codigo);
+        System.out.println("Hola "+codigo);
         if(codigo==37)//Izquierda
         {
-            System.out.println("Barco a la Izq "+codigo);
+            //System.out.println("Barco a la Izq "+codigo);
             b.mover('i');
+            repaint();
+        }
+        else if(codigo==39)
+        {
+            b.mover('d');
             repaint();
         }
     }
@@ -43,12 +48,11 @@ public class Escenario extends JPanel implements KeyListener
     }
     public void paint(Graphics g)
     {
-        //g.drawString(string,x,y);
-        //g.drawString("Hola",400,250);
-        //g.drawLine(x1,y1,x2,y2);
+        super.paint(g);//DobbleBuffer
         g.drawLine(50,300,750,300);
+        f.dibujar(g);
         b.dibujar(g);
         p.dibujar(g);
-        g.drawString(b.toString(),b.x,b.y+70);
+        //g.drawString(b.toString(),b.x,b.y+70);
     }
 }
