@@ -42,6 +42,10 @@ public class Barco
             cambiarImagen("imagenes/barquito_d.png");
         }
     }
+    void voltear()
+    {
+        x+=50;
+    }
     public String toString()
     {
         return "X:"+x+"Y:"+y;
