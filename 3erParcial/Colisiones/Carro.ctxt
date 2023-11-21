@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Carro
+comment1.params=x\ y\ ruta
+comment1.target=Carro(int,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=void\ setRectangle()
+comment3.params=g
+comment3.target=void\ dibujar(java.awt.Graphics)
+comment4.params=d
+comment4.target=void\ mover(char)
+comment5.params=otro
+comment5.target=boolean\ detectarChoque(java.awt.Rectangle)
+numComments=6

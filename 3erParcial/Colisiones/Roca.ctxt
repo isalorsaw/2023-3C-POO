@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Roca
+comment1.params=x\ y\ ruta
+comment1.target=Roca(int,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=void\ setRectangle()
+comment3.params=g
+comment3.target=void\ dibujar(java.awt.Graphics)
+numComments=4
