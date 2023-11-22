@@ -2,8 +2,10 @@
 comment0.target=Punto
 comment1.params=
 comment1.target=Punto()
-comment2.params=x\ y\ ruta
-comment2.target=Punto(int,\ int,\ java.lang.String)
-comment3.params=g
-comment3.target=void\ dibujar(java.awt.Graphics)
-numComments=4
+comment2.params=ruta
+comment2.target=void\ setRuta(java.lang.String)
+comment3.params=x\ y\ ruta
+comment3.target=Punto(int,\ int,\ java.lang.String)
+comment4.params=g
+comment4.target=void\ dibujar(java.awt.Graphics)
+numComments=5

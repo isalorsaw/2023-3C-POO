@@ -11,6 +11,11 @@ public class Punto
     {
         x=y=0;
     }
+    public void setRuta(String ruta)
+    {
+        this.ima=new ImageIcon(getClass().getResource(ruta));
+        imagen=ima.getImage();
+    }
     public Punto(int x, int y, String ruta)
     {
         this.x=x;

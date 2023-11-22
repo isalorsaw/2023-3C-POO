@@ -6,11 +6,19 @@ public class Carro extends Punto
 {
     int ancho,alto;
     Rectangle rec;
+    boolean visible;
+    boolean frenar;
     public Carro(int x, int y, String ruta)
     {
         super(x,y,ruta);
         ancho=ima.getIconWidth();
         alto=ima.getIconHeight();
+        visible=true;
+        frenar=false;
+    }
+    public void cambiarImagen(String ruta)
+    {
+        super.setRuta(ruta);
     }
     public void setRectangle()
     {
@@ -18,12 +26,15 @@ public class Carro extends Punto
     }
     public void dibujar(Graphics g)
     {
-        g.drawImage(imagen,x,y,null);
+        if(visible)g.drawImage(imagen,x,y,null);
     }
     public void mover(char d)
     {
-        if(d=='d')x+=5;
-        setRectangle();
+        if(frenar==false)//Si no esta frenado que se mueva
+        {
+            if(d=='d')x+=5;
+            setRectangle();
+        }
     }
     public boolean detectarChoque(Rectangle otro)
     {

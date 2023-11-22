@@ -8,17 +8,18 @@ import java.awt.event.KeyEvent;
 import java.awt.event.ActionEvent;
 public class Escenario extends JPanel implements ActionListener, KeyListener
 {
+    int seg;
     Fondo f;
     Timer t;
     Carro c;
     Roca r;
+    String mensaje;
     public Escenario()
     {
-        f=new Fondo(0,0,"fondo.jpg");
-        c=new Carro(30,270,"carroder.png");
-        r=new Roca(300,270,"rock.png");
-        
-        t=new Timer(5,null);
+        inicializarObjetos();
+           
+        seg=5;
+        t=new Timer(seg,null);
         t.start();
         t.addActionListener(this);
         addKeyListener(this);
@@ -26,6 +27,14 @@ public class Escenario extends JPanel implements ActionListener, KeyListener
         setFocusable(true); 
         setVisible(true);
         setSize(f.ancho,f.alto+100);
+    }
+    public void inicializarObjetos()
+    {
+        f=new Fondo(0,0,"fondo.jpg");
+        c=new Carro(30,270,"carroder.png");
+        r=new Roca(400,270,"rock.png");
+        mensaje="";
+        seg+=5;
     }
     public void actionPerformed(ActionEvent e)
     {
@@ -40,9 +49,32 @@ public class Escenario extends JPanel implements ActionListener, KeyListener
     public void keyReleased(KeyEvent evt)
     {
         //JOptionPane.showMessageDialog(null,""+evt.getKeyCode());
+        
         int code=evt.getKeyCode();
         if(code==39)c.mover('d');
+            
         boolean b=c.detectarChoque(r.rec);
+        if(b)
+        {
+            //c.visible=false;//Desaparece el carros si hay una colision
+            //c.cambiarImagen("explosion.gif");//Que aparezca una explosion
+            c.frenar=true;//Que el carro frene
+            mensaje="Choque con Roca";
+            int input = JOptionPane.showConfirmDialog(null, "Chocastes desea seguir");
+            //JOptionPane.showMessageDialog(null,""+input);
+            if(input==0)
+            {  
+                
+                inicializarObjetos();
+                repaint();
+            }
+            else if(input==1)
+            {
+                System.exit(0);
+            }
+        }
+        
+        
         System.out.println(b+"");
         repaint();
     }
@@ -84,5 +116,6 @@ public class Escenario extends JPanel implements ActionListener, KeyListener
         c.dibujar(g);
         r.dibujar(g);
         g.drawString("Elaborado por: Ing. Isaias L. Salinas",500,500);
+        g.drawString(mensaje,10,500);
     }
 }
