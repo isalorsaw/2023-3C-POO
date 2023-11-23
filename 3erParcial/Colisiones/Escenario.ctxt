@@ -8,13 +8,15 @@ comment3.params=e
 comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
 comment4.params=evt
 comment4.target=void\ keyPressed(java.awt.event.KeyEvent)
-comment5.params=evt
-comment5.target=void\ keyReleased(java.awt.event.KeyEvent)
+comment5.params=x\ y
+comment5.target=void\ crearBala(int,\ int)
 comment6.params=evt
-comment6.target=void\ keyTyped(java.awt.event.KeyEvent)
-comment7.params=d\ h
-comment7.target=int\ aleatorio(int,\ int)
-comment7.text=public\ void\ gotasCayendo()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ for(int\ i\=0;i<go.length;i++)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ go[i].cayendo();\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ public\ void\ inicializarGotas()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ for(int\ i\=0;i<go.length;i++)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ go[i]\=new\ Gota(aleatorio(10,700),aleatorio(30,100),"gota.png");\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ public\ void\ dibujarGotas(Graphics\ g)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ for(int\ i\=0;i<go.length;i++)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ go[i].dibujar(g);\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ }\r\n}
-comment8.params=g
-comment8.target=void\ paint(java.awt.Graphics)
-numComments=9
+comment6.target=void\ keyReleased(java.awt.event.KeyEvent)
+comment7.params=evt
+comment7.target=void\ keyTyped(java.awt.event.KeyEvent)
+comment8.params=d\ h
+comment8.target=int\ aleatorio(int,\ int)
+comment8.text=public\ void\ gotasCayendo()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ for(int\ i\=0;i<go.length;i++)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ go[i].cayendo();\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ public\ void\ inicializarGotas()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ for(int\ i\=0;i<go.length;i++)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ go[i]\=new\ Gota(aleatorio(10,700),aleatorio(30,100),"gota.png");\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ public\ void\ dibujarGotas(Graphics\ g)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ for(int\ i\=0;i<go.length;i++)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ go[i].dibujar(g);\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ }\r\n}
+comment9.params=g
+comment9.target=void\ paint(java.awt.Graphics)
+numComments=10

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Bala
+comment1.params=x\ y\ ruta
+comment1.target=Bala(int,\ int,\ java.lang.String)
+comment2.params=ruta
+comment2.target=void\ cambiarImagen(java.lang.String)
+comment3.params=
+comment3.target=void\ setRectangle()
+comment4.params=g
+comment4.target=void\ dibujar(java.awt.Graphics)
+comment5.params=d
+comment5.target=void\ mover(char)
+comment6.params=otro
+comment6.target=boolean\ detectarChoque(java.awt.Rectangle)
+numComments=7
