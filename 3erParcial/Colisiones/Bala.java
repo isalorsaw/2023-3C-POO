@@ -30,9 +30,9 @@ public class Bala extends Punto
     }
     public void mover(char d)
     {
-        /*if(d=='d')x+=5;
-        else if(d=='i')x-=5;
-            setRectangle();*/
+        setRectangle();
+        if(d=='d')y++;
+        else if(d=='u')y--;
     }
     public boolean detectarChoque(Rectangle otro)
     {

@@ -33,6 +33,7 @@ public class Carro extends Punto
         if(frenar==false)//Si no esta frenado que se mueva
         {
             if(d=='d')x+=5;
+            else if(d=='u')y--;
             setRectangle();
         }
     }
